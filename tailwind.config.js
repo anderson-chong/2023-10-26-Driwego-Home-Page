@@ -17,6 +17,7 @@ module.exports = {
         label: ["0.6875rem", "1rem"],
       },
       borderRadius: {
+        xl: "0.875rem",
         "4xl": "2rem",
       },
       maxWidth: {
