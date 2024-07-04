@@ -7,7 +7,10 @@ module.exports = {
         "light-grey-1": "#F7F7F7",
         "light-grey-2": "#E3E3E3",
         "dark-grey": "#3C3C3C",
+        delete: "#F73F3F",
         brand: "#8DC63F",
+        "voucher-light": "#FDB71640",
+        voucher: "#FDB716",
       },
       fontSize: {
         body: ["0.875rem", "1.25rem"],
