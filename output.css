@@ -662,6 +662,10 @@ video {
   margin-right: 1rem;
 }
 
+.mr-2 {
+  margin-right: 0.5rem;
+}
+
 .block {
   display: block;
 }
@@ -708,6 +712,10 @@ video {
 
 .w-\[calc\(\(100vw-4rem-1\.5rem\)\/3\)\] {
   width: calc((100vw - 4rem - 1.5rem) / 3);
+}
+
+.w-\[calc\(\(100vw-2rem-1\.5rem\)\/3\)\] {
+  width: calc((100vw - 2rem - 1.5rem) / 3);
 }
 
 .min-w-\[calc\(100\%-2rem\)\] {
@@ -774,6 +782,10 @@ video {
 
 .gap-4 {
   gap: 1rem;
+}
+
+.gap-2 {
+  gap: 0.5rem;
 }
 
 .gap-x-4 {
@@ -929,6 +941,10 @@ video {
 
 .pt-6 {
   padding-top: 1.5rem;
+}
+
+.pr-2 {
+  padding-right: 0.5rem;
 }
 
 .text-center {
