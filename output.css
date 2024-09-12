@@ -538,6 +538,10 @@ video {
   --tw-aspect-h: 1;
 }
 
+.aspect-h-10 {
+  --tw-aspect-h: 10;
+}
+
 .aspect-h-5 {
   --tw-aspect-h: 5;
 }
@@ -574,6 +578,22 @@ video {
   left: 0;
 }
 
+.aspect-w-7 {
+  position: relative;
+  padding-bottom: calc(var(--tw-aspect-h) / var(--tw-aspect-w) * 100%);
+  --tw-aspect-w: 7;
+}
+
+.aspect-w-7 > * {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
 .aspect-w-9 {
   position: relative;
   padding-bottom: calc(var(--tw-aspect-h) / var(--tw-aspect-w) * 100%);
@@ -598,16 +618,12 @@ video {
   position: relative;
 }
 
-.left-0 {
-  left: 0px;
-}
-
-.top-1 {
-  top: 0.25rem;
-}
-
 .bottom-0 {
   bottom: 0px;
+}
+
+.left-0 {
+  left: 0px;
 }
 
 .right-0 {
@@ -670,6 +686,10 @@ video {
   width: 2.5rem;
 }
 
+.w-10\/12 {
+  width: 83.333333%;
+}
+
 .w-\[calc\(\(100vw-5rem\)\/3\)\] {
   width: calc((100vw - 5rem) / 3);
 }
@@ -680,6 +700,14 @@ video {
 
 .w-full {
   width: 100%;
+}
+
+.w-\[calc\(\(100vw-3rem-2rem\)\/3\)\] {
+  width: calc((100vw - 3rem - 2rem) / 3);
+}
+
+.w-\[calc\(\(100vw-4rem-1\.5rem\)\/3\)\] {
+  width: calc((100vw - 4rem - 1.5rem) / 3);
 }
 
 .min-w-\[calc\(100\%-2rem\)\] {
@@ -757,6 +785,11 @@ video {
   row-gap: 0.5rem;
 }
 
+.gap-x-2 {
+  -moz-column-gap: 0.5rem;
+       column-gap: 0.5rem;
+}
+
 .overflow-clip {
   overflow: clip;
 }
@@ -801,6 +834,15 @@ video {
   border-top-right-radius: 0.875rem;
 }
 
+.border-t-2 {
+  border-top-width: 2px;
+}
+
+.border-black {
+  --tw-border-opacity: 1;
+  border-color: rgb(0 0 0 / var(--tw-border-opacity));
+}
+
 .bg-black {
   --tw-bg-opacity: 1;
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
@@ -811,6 +853,11 @@ video {
   background-color: rgb(247 247 247 / var(--tw-bg-opacity));
 }
 
+.bg-red-400 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(248 113 113 / var(--tw-bg-opacity));
+}
+
 .bg-voucher {
   --tw-bg-opacity: 1;
   background-color: rgb(253 183 22 / var(--tw-bg-opacity));
@@ -818,33 +865,6 @@ video {
 
 .bg-voucher-light {
   background-color: #FDB71640;
-}
-
-.bg-red-200 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(254 202 202 / var(--tw-bg-opacity));
-}
-
-.bg-red-600 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(220 38 38 / var(--tw-bg-opacity));
-}
-
-.bg-red-400 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(248 113 113 / var(--tw-bg-opacity));
-}
-
-.bg-cover {
-  background-size: cover;
-}
-
-.bg-center {
-  background-position: center;
-}
-
-.bg-no-repeat {
-  background-repeat: no-repeat;
 }
 
 .object-cover {
@@ -864,6 +884,11 @@ video {
   padding: 1rem;
 }
 
+.px-1 {
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+}
+
 .px-3 {
   padding-left: 0.75rem;
   padding-right: 0.75rem;
@@ -874,13 +899,32 @@ video {
   padding-right: 1rem;
 }
 
+.py-2 {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
 .py-\[2px\] {
   padding-top: 2px;
   padding-bottom: 2px;
 }
 
+.px-2 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
 .pl-4 {
   padding-left: 1rem;
+}
+
+.pt-1 {
+  padding-top: 0.25rem;
 }
 
 .pt-6 {
@@ -898,6 +942,10 @@ video {
 .text-4xl {
   font-size: 2.25rem;
   line-height: 2.5rem;
+}
+
+.text-\[26px\] {
+  font-size: 26px;
 }
 
 .text-body {
@@ -918,6 +966,10 @@ video {
 .text-label {
   font-size: 0.6875rem;
   line-height: 1rem;
+}
+
+.font-bold {
+  font-weight: 700;
 }
 
 .font-extrabold {
@@ -950,19 +1002,64 @@ video {
   color: rgb(247 63 63 / var(--tw-text-opacity));
 }
 
+.text-voucher-orange {
+  --tw-text-opacity: 1;
+  color: rgb(173 63 56 / var(--tw-text-opacity));
+}
+
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-voucher-red {
+  --tw-text-opacity: 1;
+  color: rgb(255 0 0 / var(--tw-text-opacity));
 }
 
 .underline {
   text-decoration-line: underline;
 }
 
-.opacity-0 {
-  opacity: 0;
+@media (min-width: 360px) {
+  .small\:text-\[34px\] {
+    font-size: 34px;
+  }
+
+  .small\:text-body {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+
+  .small\:text-header-3 {
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+  }
 }
 
-.opacity-50 {
-  opacity: 0.5;
+@media (min-width: 400px) {
+  .medium\:text-\[42px\] {
+    font-size: 42px;
+  }
+
+  .medium\:text-body {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+
+  .medium\:text-header-2 {
+    font-size: 1.375rem;
+    line-height: 1.75rem;
+  }
+}
+
+@media (min-width: 440px) {
+  .big\:text-\[52px\] {
+    font-size: 52px;
+  }
+
+  .big\:text-header-1 {
+    font-size: 1.688rem;
+    line-height: 2rem;
+  }
 }

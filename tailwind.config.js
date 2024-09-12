@@ -3,6 +3,11 @@ module.exports = {
   content: ["./**/*.{html,js}"],
   theme: {
     extend: {
+      screens: {
+        small: "360px",
+        medium: "400px",
+        big: "440px",
+      },
       colors: {
         "light-grey-1": "#F7F7F7",
         "light-grey-2": "#E3E3E3",
@@ -11,10 +16,13 @@ module.exports = {
         brand: "#8DC63F",
         "voucher-light": "#FDB71640",
         voucher: "#FDB716",
+        "voucher-orange": "#AD3F38",
+        "voucher-red": "#FF0000",
       },
       fontSize: {
         body: ["0.875rem", "1.25rem"],
         "header-1": ["1.688rem", "2rem"],
+        "header-2": ["1.375rem", "1.75rem"],
         "header-3": ["1.125rem", "1.5rem"],
         "header-4": ["0.875rem", "1.25rem"],
         label: ["0.6875rem", "1rem"],
